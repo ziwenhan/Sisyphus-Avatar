@@ -1,5 +1,5 @@
 # Sisyphus-Avatar
 
-** Instruction **
+## INSTRUCTION
 
 `python AvatarGenerator.py`
