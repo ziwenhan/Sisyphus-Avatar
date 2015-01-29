@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 
+# copyright by VinnSung
+
 import hashlib
 from PIL import Image, ImageColor
 
