@@ -53,12 +53,12 @@ for i in range(101, 126):
 colorIndex = int(binaryHash[126:], 2)
 colorRGB = ['#51574a', '#74c493', '#e4bf80', '#e279a3', '#9abf88', '#5698c4', '#65387d', '#5cbddd']
 
-avatar = Image.new('RGB', (500, 500), 'white')
+avatar = Image.new('RGB', (560, 560), (235,235,235))
 pixels = avatar.load()
 
-for i in range(avatar.size[0]):
-	for j in range(avatar.size[1]):
-		if pixelList[i / 100][j / 100] == 1:
+for i in range(30, avatar.size[0]-30):
+	for j in range(30, avatar.size[1]-30):
+		if pixelList[(i-30) / 100][(j-30) / 100] == 1:
 			pixels[i, j] = ImageColor.getrgb(colorRGB[colorIndex])
 
 avatar.show()
